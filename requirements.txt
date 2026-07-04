@@ -1,0 +1,8 @@
+streamlit>=1.43.0
+pandas>=2.2.0
+numpy>=1.26.0
+numpy-financial>=1.0.0
+pyxirr>=0.10.5
+PyMuPDF>=1.24.0
+matplotlib>=3.8.0
+reportlab

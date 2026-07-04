@@ -1,0 +1,5 @@
+Form 16 Mock Data
+Gross Salary: 1200000
+80C Deduction: 150000
+80D Deduction: 50000
+HRA Deduction: 200000
