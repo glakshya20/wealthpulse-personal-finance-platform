@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/PyMuPDF-00599C?style=for-the-badge"/>
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/Privacy--First-0b6e69?style=for-the-badge"/>
-<img src="https://img.shields.io/badge/TIET-2024--28-blue?style=for-the-badge"/>
+
 
 # WealthPulse — Personal Finance Intelligence Platform
 
