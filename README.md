@@ -6,7 +6,6 @@
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white"/>
 <img src="https://img.shields.io/badge/Privacy--First-0b6e69?style=for-the-badge"/>
 
-
 # WealthPulse — Personal Finance Intelligence Platform
 
 **A local-first personal CFO that turns your financial documents into decisions.**  
@@ -31,7 +30,7 @@ The system runs entirely on the user's machine. No backend, no database, no API 
 **Tax Wizard**  
 Computes tax liability under both old and new regimes for FY 2025-26. Adds Schedule OS income from AIS (FD interest, savings interest, dividends) to the taxable base, subtracts TDS already deposited by banks, and shows the exact net payable at ITR filing. Flags advance tax obligations under Section 234C when residual liability exceeds ₹10,000.
 
-**AIS Insights** ← *core contribution*  
+**AIS Insights** ← _core contribution_  
 Parses the Income Tax Department's Annual Information Statement (PDF or JSON) entirely locally. Cross-validates it against Form 16 and CAMS to surface discrepancies — salary gaps, missing MF folios, phantom income — that most taxpayers miss. Shows every income category the IT Department already knows about and computes the tax impact.
 
 **Portfolio X-Ray**  
@@ -58,17 +57,17 @@ The AIS engine (`ais_engine.py`) is the primary technical contribution of this p
 
 Supports all major AIS sections:
 
-| Section | Content |
-|---|---|
-| TDS-01 | Salary (from employer) |
-| SFT-001 / SFT-016 | Savings + FD interest |
-| SFT-017 | Dividend income |
-| SFT-018 | Mutual fund purchase / redemption |
-| SFT-004 | Securities (stocks) purchase / sale |
-| SFT-005 / SFT-006 | Immovable property transactions |
-| SFT-011 | Cash deposits |
-| SFT-012 | Credit card payments |
-| TDS-26Q | TDS on non-salary income |
+| Section           | Content                             |
+| ----------------- | ----------------------------------- |
+| TDS-01            | Salary (from employer)              |
+| SFT-001 / SFT-016 | Savings + FD interest               |
+| SFT-017           | Dividend income                     |
+| SFT-018           | Mutual fund purchase / redemption   |
+| SFT-004           | Securities (stocks) purchase / sale |
+| SFT-005 / SFT-006 | Immovable property transactions     |
+| SFT-011           | Cash deposits                       |
+| SFT-012           | Credit card payments                |
+| TDS-26Q           | TDS on non-salary income            |
 
 ### Reconciliation
 
