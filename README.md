@@ -11,7 +11,7 @@
 **A local-first personal CFO that turns your financial documents into decisions.**  
 Processes Form 16, CAMS/KFintech CAS, and the Income Tax AIS entirely on your machine — zero data leaves your device.
 
-[Live Demo](https://et-wealthpulse.streamlit.app) · [LinkedIn](https://linkedin.com/in/lakshya-gupta7) · [GitHub](https://github.com/glakshya20)
+[Live Demo](https://wealthpulse-personal-finance-platform.streamlit.app/) · [LinkedIn](https://linkedin.com/in/lakshya-gupta7) · [GitHub](https://github.com/glakshya20)
 
 </div>
 
