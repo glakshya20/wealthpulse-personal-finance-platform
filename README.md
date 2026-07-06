@@ -45,6 +45,15 @@ Scores six dimensions — emergency fund, insurance coverage, debt-to-income, di
 **Privacy-First Architecture**  
 All computation happens in a local Python process. Documents are parsed into memory and discarded on session close. No data reaches any external server.
 
+**Executive Summary Dashboard**
+Provides a single-view financial snapshot including net worth allocation, tax optimization opportunities, retirement readiness, portfolio performance, AIS compliance status, and actionable recommendations.
+
+**Downloadable Financial Report**
+Exports a professionally formatted PDF financial report containing portfolio analysis, tax recommendations, FIRE projections, AIS findings, and personalized action items for future reference.
+
+**🤖Advisor Chat**
+Interactive AI-powered financial assistant that answers questions using insights generated from uploaded financial documents and WealthPulse analytics.
+
 ---
 
 ## AIS Integration — Technical Detail
@@ -111,23 +120,16 @@ ais_tds_paid: float = 0.0           # TDS-26Q credit
 Form 16           CAMS CAS           AIS
 Parser            Parser             Parser
    │                 │                 │
-   └─────────────────┴─────────────────┘
-                      │
-          ┌───────────▼───────────┐
-          │    finance_engine.py   │
-          │  TaxInputs (+ AIS)     │
-          │  compare_tax_regimes   │
-          │  portfolio_xray        │
-          │  calculate_fire_plan   │
-          │  score_money_health    │
-          └───────────┬───────────┘
-                      │
-          ┌───────────▼───────────┐
-          │     ais_engine.py      │
-          │   parse_ais()          │
-          │   reconcile_ais()      │
-          │   enrich_tax_inputs()  │
-          └───────────────────────┘
+   └─────────┬────────┴───────┬──────────┘
+      Finance Engine      AIS Engine│
+                    │
+                    │
+      ┌─────────────┼───────────────────────────────────┐
+      ▼             ▼            ▼            ▼          ▼
+ Tax Wizard   Portfolio X-Ray  FIRE Planner Money Health Advisor Chat
+                    │
+                    ▼
+          Report Generator (PDF Export)
 ```
 
 ### Agent Components
@@ -149,7 +151,8 @@ wealthpulse-personal-finance-platform/
 ├── app.py                   # Streamlit UI, orchestration, all pages
 ├── finance_engine.py        # Tax engine, XIRR, FIRE, health score
 ├── ais_engine.py            # AIS parser, reconciler, tax enrichment
-├── mock_data_generator.py   # Demo data with realistic AIS scenario
+├── mock_data_generator.py   # Demo data with realistic AIS scenario'
+├──report_generator.py       # Generates PDF financial report
 ├── requirements.txt
 ├── demo_docs/
 │   ├── demo_form16.pdf
@@ -194,7 +197,7 @@ Running locally (`streamlit run app.py`) gives the strongest guarantee — no da
 
 ## Tech Stack
 
-`Streamlit` · `Pandas` · `NumPy` · `NumPy-Financial` · `pyxirr` · `PyMuPDF` · `Matplotlib`
+`Python`·`Streamlit` · `Pandas` · `NumPy` · `NumPy-Financial` · `pyxirr` · `PyMuPDF` · `Matplotlib` · `ReportLab (PDF generation)`
 
 ---
 
