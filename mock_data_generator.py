@@ -435,3 +435,4 @@ if __name__ == "__main__":
     print("Generated demo documents:")
     for label, path in created.items():
         print(f"- {label}: {path.resolve()}")
+#oknow
