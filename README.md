@@ -49,7 +49,8 @@ All computation happens in a local Python process. Documents are parsed into mem
 Provides a single-view financial snapshot including net worth allocation, tax optimization opportunities, retirement readiness, portfolio performance, AIS compliance status, and actionable recommendations.
 
 **Downloadable Financial Report**
-Exports a professionally formatted PDF financial report containing portfolio analysis, tax recommendations, FIRE projections, AIS findings, and personalized action items for future reference.
+Exports a professionally formatted PDF financial report containing portfolio analysis, tax recommendations, FIRE projections, AIS findings, and personalized action items for future reference. **Sample Report** <img width="477" height="632" alt="Screenshot 2026-07-07 143423" src="https://github.com/user-attachments/assets/089ab6af-7dde-4d56-9429-2350d58e86eb" />
+
 
 **🤖Advisor Chat**
 Interactive AI-powered financial assistant that answers questions using insights generated from uploaded financial documents and WealthPulse analytics.
