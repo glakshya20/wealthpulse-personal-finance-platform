@@ -664,3 +664,5 @@ def confidence_label(ais: AISData) -> str:
     if ais.confidence >= 0.40:
         return "Partial"
     return "Low"
+
+#oknow
