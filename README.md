@@ -131,6 +131,8 @@ Parser            Parser             Parser
                     │
                     ▼
           Report Generator (PDF Export)
+<img width="2720" height="3040" alt="wealthpulse_architecture" src="https://github.com/user-attachments/assets/375ba3a2-d364-4d7d-b723-33de86061424" />
+
 ```
 
 ### Agent Components
